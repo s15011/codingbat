@@ -74,7 +74,8 @@ def pos_neg(a, b, negative):
 
 ### not_string
 > 文字列の最初に not があったらそのまま出力、なかったら not を前に追加して出力する。
-```def not_string(str):
+```
+def not_string(str):
   if len(str) >= 3 and str[:3] == "not":
     return str
   return "not " + str
@@ -82,7 +83,8 @@ def pos_neg(a, b, negative):
 
 ### missing_char
 > 文字が入ってる文字列と整数 n があります。 n 番目の文字を消して新しく文字を出力する。
-```def missing_char(str, n):
+```
+def missing_char(str, n):
   return str[:n] + str[1+n:]
 ```
 
