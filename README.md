@@ -53,5 +53,38 @@ def parrot_trouble(talking, hour):
 ```
 def makes10(a, b):
   return(a == 10 or b == 10 or a+b == 10)
+```
+
+### near_hundred
+> 整数 n があります。100 または 200 と n の絶対値が10以内なら True を出力する。
+```
+def near_hundred(n):
+  return((abs(100 - n) <=10) or (abs(200-n) <=10))
+```
+
+### pos_neg
+> 両方が negative または not negative なら True を出力する。
+```
+def pos_neg(a, b, negative):
+  if negative:
+    return(a < 0 and b < 0)
+  else:
+    return((a > 0 and b < 0) or (a < 0 and b > 0))
+```
+
+### not_string
+> 文字列の最初に not があったらそのまま出力、なかったら not を前に追加して出力する。
+```def not_string(str):
+  if len(str) >= 3 and str[:3] == "not":
+    return str
+  return "not " + str
+```
+
+### missing_char
+> 文字が入ってる文字列と整数 n があります。 n 番目の文字を消して新しく文字を出力する。
+```def missing_char(str, n):
+  return str[:n] + str[1+n:]
+```
+
 
   
